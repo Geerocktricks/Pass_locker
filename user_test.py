@@ -20,7 +20,11 @@ class TestUser(unittest .TestCase):
 
     #******************************tearDown method******************************************************
 
-                            #tearDown here
+    def tearDown(self):
+        '''tear down method to clean up after every test
+        '''
+        User.user_list = [] #Returns an empty user list after every test
+    
 
     #*******************************Create user test******************************************************
 
@@ -39,6 +43,17 @@ class TestUser(unittest .TestCase):
         '''
         self.new_user.save_user() #saving new user
         self.assertEqual(len(User.user_list) , 1)
+
+    #*********************************Save multiple users test**************************************************
+
+    def test_save_multiple_users(self):
+        '''
+        Test to see if multiple users can be saved
+        '''
+        self.new_user.save_user()
+        dummy_user = User('Trevor' , 'Jayson') #new dummy user
+        dummy_user.save_user()
+        self.assertEqual(len(User.user_list) , 2)
 
 if __name__ == '__main__':
     unittest.main()
