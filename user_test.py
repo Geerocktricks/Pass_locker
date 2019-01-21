@@ -70,10 +70,10 @@ class TestUser(unittest .TestCase):
 
     #************************************Display all users***********************************************************
 
-    # def test_display_all_users(self):
-    #     '''
-    #     method that returns a list of all users saved
-    #     '''
-    #     self.assertEqual(User.display_users() , User.user_list)
+    def test_display_all_users(self):
+        '''
+        method that returns a list of all users saved
+        '''
+        self.assertEqual(User.display_users() , User.user_list)
 if __name__ == '__main__':
     unittest.main()
