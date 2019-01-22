@@ -89,6 +89,21 @@ def main():
             print('                                  *                                                                                           *')
             print('                                  *                                                                                           *')
             print(f'                                         Logged in as {f_name} {l_name} ')
+        elif log_sign == '1':
+            print('                                  *                                                                                          *')
+            print('                                  *                                                                                          *')
+            print('                                  *                                                                                          *')
+            print('                                  *                                                                                          *')
+            print('                                         First name ....')
+            f_name = input().lower()
+            print('                                  *                                                                                          *')
+            print('                                  *                                                                                          *')
+            print('                                  *                                                                                          *')
+            print('                                  *                                                                                          *')
+            print("                                         Last name .....")
+            last_name = input().lower()
+            if last_name == 'muchuki':
+                print(f"                                         You are logged in as {f_name} {last_name}") 
     elif first_choice == 'n':
         print('                                                                         Bye')
     else:
