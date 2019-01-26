@@ -126,6 +126,11 @@ def main():
                 if acnt_passA == acnt_passB:
                     print(f'                                       New {acnt_name} account created!')
                     print('                                      [a=] Display Existing accounts                        [b=] Exit')
+                    view_acnt = input()
+                    while view_acnt == 'b':
+                        break
+                    if view_acnt == 'a':
+                        print('                                     Here are your acounnts')   #To be changed to display accounts
 
         #     print('\n')
         #     print('                                  *                                                                                           *')

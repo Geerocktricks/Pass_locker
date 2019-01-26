@@ -27,8 +27,8 @@ There are currently no known bugs
 ## Set up and Installation
 #### Prequisites
 The user should have git and python3.6(or plus) installed. To install this, use the following commands.
-$ sudo apt install git-all (for git)
-$ sudo apt-get install python3.6 (for python)
+* $ sudo apt install git-all (for git)
+* $ sudo apt-get install python3.6 (for python)
 #### installation
 To use this application , you need to clone it from https://github.com/Geerocktricks/Pass_locker.git
 
