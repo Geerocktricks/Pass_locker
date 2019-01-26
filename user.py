@@ -33,3 +33,15 @@ class User:
         method that returns the user list
         '''
         return cls.user_list
+
+class Credentials:
+    '''
+    class that generates new credentials intsances
+    '''
+    pass
+    def __init__(self , account_name , password):
+        '''
+        init method to create instances of the credentials class
+        '''
+        self.account_name = account_name
+        self.password = password
