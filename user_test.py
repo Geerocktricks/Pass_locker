@@ -108,9 +108,9 @@ class TestCredentials(unittest.TestCase):
 
     #***********************************Create account (Credentials) test***************************
 
-    # def test_init_credentials(self):
-    #     '''
-    #     Test to see if accounts are instanciated properties
-    #     '''
-    #     self.assertEqual(self.new_credentials.account_name , 'Instagram')
-    #     self.assertEqual(self.new_user.password , 'Gerald12345')
+    def test_init_credentials(self):
+        '''
+        Test to see if accounts are instanciated properties
+        '''
+        self.assertEqual(self.new_credentials.account_name , 'Instagram')
+        self.assertEqual(self.new_user.password , 'Gerald12345')
