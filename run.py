@@ -115,6 +115,18 @@ def main():
             print('                                  *                                                                                          *')
             print('                                  *                                                                                          *')
             print('                                            [1 =] View existing acconts                             [2 =] Add new account        ')
+            acnt = input()
+            if acnt == '2':
+                print('                                         Account name ..............')
+                acnt_name = input()
+                print('                                          Password..........')
+                acnt_passA = getpass.getpass('Password:')
+                print('                                         Confirm password.........')
+                acnt_passB = getpass.getpass('Password:')
+                if acnt_passA == acnt_passB:
+                    print(f'                                       New {acnt_name} account created!')
+                    print('                                      [a=] Display Existing accounts                        [b=] Exit')
+
         #     print('\n')
         #     print('                                  *                                                                                           *')
         #     print('                                  *                                                                                           *')
